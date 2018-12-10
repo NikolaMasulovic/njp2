@@ -1,0 +1,15 @@
+<div>
+    Sastojci
+  </div>
+  <table>
+      <tr *ngFor="let item of products ;index as i">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+      </tr>
+    </table>
+    <br>
+<div>
+  Novi sastojak:<input type="text" [(ngModel)]="newPrName">
+  <button (click)="add()">Dodaj</button>
+</div>
+  

@@ -1,0 +1,8 @@
+<h2>Recepti</h2>
+<ul class="heroes">
+  <li *ngFor="let rec of recipies">
+    <a routerLink="/recipe/{{rec.id}}">
+      <span class="badge">{{rec.id}}</span> {{rec.name}}
+    </a>
+  </li>
+</ul>

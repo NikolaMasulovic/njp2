@@ -1,0 +1,13 @@
+<div>
+    Ime:<input type="text" [(ngModel)]="newPrName">
+  </div>
+  <table>
+      <tr *ngFor="let item of products ;index as i">
+        <td>{{ item.name }}</td>
+        <td><input #selector type="checkbox" [(ngModel)]="item.check"></td>
+      </tr>
+    </table>
+    <br>
+<div>
+  <button (click)="add()">Dodaj</button>
+</div>
